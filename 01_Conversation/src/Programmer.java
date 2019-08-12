@@ -4,7 +4,7 @@ public class Programmer extends Person {
 
     public Programmer(String name) {
         super(name);
-        setQuestion("How are you?");
+        this.question = "How are you?";
     }
 
     @Override
@@ -14,9 +14,5 @@ public class Programmer extends Person {
 
     public String getQuestion() {
         return question;
-    }
-
-    private void setQuestion(String question) {
-        this.question = question;
     }
 }

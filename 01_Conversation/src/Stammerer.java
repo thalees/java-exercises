@@ -9,5 +9,8 @@ public class Stammerer extends Person {
         return "Th-Th-Th-Th-Th-... That's all, folks.";
     }
 
-
+    public void responds(Person person){
+        System.out.println(this.getName() + ": " + this.getSalutation() + " " + person.getName());
+        System.out.println(this.getName() + ": " + this.getPhrase());
+    }
 }

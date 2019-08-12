@@ -1,11 +1,9 @@
 public class Main {
     public static void main(String[] args){
-        Programmer programmer = new Programmer("Maua");
-        Stammerer stammerer = new Stammerer("porkyPig");
+        Programmer programmer = new Programmer("John");
+        Stammerer stammerer = new Stammerer("PorkyPig");
 
-        System.out.println(programmer.getSalutation());
-        System.out.println(stammerer.getSalutation());
-        System.out.println(programmer.getQuestion());
-        System.out.println(stammerer.getPhrase());
+        programmer.greet(stammerer);
+        stammerer.responds(programmer);
     }
 }

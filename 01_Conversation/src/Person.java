@@ -5,32 +5,25 @@ public class Person {
     private String phrase;
 
     public Person(String name) {
-        setName(name);
-        setSalutation("Hello");
-        setPhrase("I'm happy");
+        this.name = name;
+        this.salutation = "Hello";
+        this.phrase = "I'm happy";
+    }
+
+    public void greet (Person person) {
+        System.out.println(this.name + ": "  + this.salutation + " " + person.name);
+        System.out.println(this.name + ": " + this.phrase);
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getSalutation() {
         return salutation;
     }
 
-    private void setSalutation(String salutation) {
-        this.salutation = salutation;
-    }
-
     public String getPhrase() {
         return phrase;
-    }
-
-    private void setPhrase(String phrase) {
-        this.phrase = phrase;
     }
 }
