@@ -1,0 +1,3 @@
+[submodule "sales-system"]
+	path = sales-system
+	url = git@github.com:thalees/sales-system.git
